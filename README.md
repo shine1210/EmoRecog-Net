@@ -1,12 +1,46 @@
-# EmoRecog-Net
-EmoRecog-Net is a multimodal deep learning framework for video-induced emotion categorization and intensity recognition from fMRI and physiological signals (PPG and respiration).
+# EmoRecog-Net  
+A Multimodal Dual-Task Framework for Emotion Recognition from fMRI and Physiological Signals  
 
-The model integrates:
+## 🔍 Overview
 
-CNN-based spatial feature extraction
+EmoRecog-Net is a multimodal deep learning framework designed for **video-induced emotion categorization and intensity recognition** from synchronized neuroimaging and physiological signals.
 
-GRU-based temporal modeling
+The model jointly learns:
 
-MLP-driven nonlinear multimodal fusion
+- Spatial representations from fMRI  
+- Temporal dependencies via recurrent modeling  
+- Nonlinear cross-modal fusion of neural and autonomic signals  
 
-Evaluated on the ICBHI 2024 multimodal benchmark, EmoRecog-Net achieved the lowest official Finalscore (0.2815) among competing approaches, outperforming CNN-LSTM, graph-based, and autoencoder baselines.
+This repository provides the implementation used in our study:
+
+> EmoRecog-Net: A Multimodal Framework for Emotion Recognition from fMRI and Physiological Signals  
+> (Under review)
+
+---
+
+## 🧠 Model Architecture
+
+EmoRecog-Net integrates:
+
+- **Two-stream CNN backbone** for fMRI spatial feature extraction  
+- **GRU-based temporal encoder** (128 hidden units)  
+- **MLP-based nonlinear multimodal fusion** for heart rate and respiration rate  
+- **Dual-task output heads**:
+  - Emotion categorization (positive / neutral / negative)
+  - Emotion recognition (self-reported intensity regression)
+
+The design emphasizes:
+- Data efficiency under small-sample conditions  
+- Robustness to missing physiological channels  
+- Structured cross-modal alignment  
+
+---
+
+## 📊 Dataset
+
+Experiments were conducted on the **ICBHI 2024 Multimodal Emotion Benchmark**, which includes:
+
+- fMRI regional time-series
+- Photoplethysmography (PPG)
+- Respiration signals
+- Video-evoked emotional stimuli
