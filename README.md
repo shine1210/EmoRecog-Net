@@ -44,3 +44,10 @@ Experiments were conducted on the **ICBHI 2024 Multimodal Emotion Benchmark**, w
 - Photoplethysmography (PPG)
 - Respiration signals
 - Video-evoked emotional stimuli
+
+⚠️ This repository does **not** include the dataset.  
+Please obtain the data from the official ICBHI 2024 Scientific Challenge website:  
+https://www.icbhi2024.com/sc  
+
+All data usage must comply with the terms and policies specified by the challenge organizers.
+
