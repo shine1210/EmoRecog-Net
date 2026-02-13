@@ -51,6 +51,8 @@ https://www.icbhi2024.com/sc
 
 All data usage must comply with the terms and policies specified by the challenge organizers.
 
+---
+
 ## 📦 Pretrained Weights
 
 The pretrained model weights corresponding to the results reported in the manuscript are publicly available via GitHub Release.
