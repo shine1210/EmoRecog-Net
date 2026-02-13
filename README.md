@@ -53,6 +53,14 @@ All data usage must comply with the terms and policies specified by the challeng
 
 ---
 
+## 🗂 Data Split
+
+The dataset split used in this study is provided in CSV format:
+
+- `levelsplit.csv`
+
+---
+
 ## 📦 Pretrained Weights
 
 The pretrained model weights corresponding to the results reported in the manuscript are publicly available via GitHub Release.
