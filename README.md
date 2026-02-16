@@ -43,7 +43,6 @@ Experiments were conducted on the **ICBHI 2024 Multimodal Emotion Benchmark**, w
 - fMRI regional time-series
 - Photoplethysmography (PPG)
 - Respiration signals
-- Video-evoked emotional stimuli
 
 ⚠️ This repository does **not** include the dataset.  
 Please obtain the data from the official ICBHI 2024 Scientific Challenge website:  
