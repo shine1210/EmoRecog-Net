@@ -3,7 +3,7 @@ A Multimodal Dual-Task Framework for Emotion Recognition from fMRI and Physiolog
 
 ## 🔍 Overview
 
-EmoRecog-Net is a multimodal deep learning framework designed for **video-induced emotion categorization and intensity recognition** from synchronized neuroimaging and physiological signals.
+EmoRecog-Net is a multimodal deep learning framework designed for **video-induced emotion categorization and intensity recognition** from synchronized fMRI and physiological signals.
 
 The model jointly learns:
 
