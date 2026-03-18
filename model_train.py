@@ -89,7 +89,7 @@ def DL_CNN(input_shape=(25,246)):
     x22c = tf.keras.layers.AveragePooling1D(pool_size=2, strides=2)(x21c)
     x31c = tf.keras.layers.Conv1D(1000, kernel_size=1, strides=1, padding='same', activation=act)(x22c)
     x32c = tf.keras.layers.AveragePooling1D(pool_size=2, strides=2)(x31c)
-    LSTM_c1 = tf.keras.layers.GRU(32)(x22c) # Reduce sequence of embedded words in the title into a single 128-dimensional vector
+    LSTM_c1 = tf.keras.layers.GRU(32)(x22c)
     x_fc = tf.keras.layers.Flatten()(LSTM_c1)
     x_d1c = tf.keras.layers.Dense(1000, activation=act)(x_fc)
     x_dd1c = tf.keras.layers.Dropout(0.5)(x_d1c)
@@ -101,7 +101,7 @@ def DL_CNN(input_shape=(25,246)):
     x22l = tf.keras.layers.AveragePooling1D(pool_size=2, strides=2)(x21l)
     x31l = tf.keras.layers.Conv1D(1000, kernel_size=1, strides=1, padding='same', activation=act)(x22l)
     x32l = tf.keras.layers.AveragePooling1D(pool_size=2, strides=2)(x31l)
-    LSTM_l1 = tf.keras.layers.GRU(128)(x22l) # Reduce sequence of embedded words in the body into a single 32-dimensional vector
+    LSTM_l1 = tf.keras.layers.GRU(128)(x22l)
     x_fl = tf.keras.layers.Flatten()(LSTM_l1)
     x_d1l = tf.keras.layers.Dense(1000, activation=act)(x_fl)
     x_d1l = tf.keras.layers.Dropout(0.5)(x_d1l)
