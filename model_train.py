@@ -144,7 +144,8 @@ if __name__ == '__main__':
     cce_loss = tf.keras.losses.CategoricalCrossentropy()
     mse_loss = tf.keras.losses.MeanSquaredError(reduction="sum_over_batch_size", name="mean_squared_error")
 
-    opt = tf.keras.optimizers.SGD(learning_rate=1e-6)
+    # opt = tf.keras.optimizers.SGD(learning_rate=1e-6)
+    opt = tf.optimizers.Adam(learning_rate=1e-5)
     model.compile(optimizer=opt, loss={'class':cce_loss, 'level':mse_loss}, loss_weights={'class':0.3,'level':0.7}, metrics=['accuracy'])
     
     ##### callbacks model monitor
