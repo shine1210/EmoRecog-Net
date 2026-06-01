@@ -14,7 +14,7 @@ The model jointly learns:
 This repository provides the implementation used in our study:
 
 > EmoRecog-Net: A Multimodal Framework for Emotion Recognition from fMRI and Physiological Signals  
-> (Under review)
+> https://ieeexplore.ieee.org/document/11526729
 
 ---
 
